@@ -21,7 +21,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 public class Intake extends Subsystem {
   VictorSP wheelMotor = new VictorSP(1);
   // VictorSP winchMotor = new VictorSP(2); 
-  VictorSP shootMotor = new VictorSP(3);
+  // VictorSP shootMotor = new VictorSP(3);
 
 
   // public Colorwheel() {
@@ -54,13 +54,13 @@ public void intakeStop() {
 //   liftMotor.set(0);
 // }
 
-public void shootForward() {
-  shootMotor.set(1);
-}
+// public void shootForward() {
+//   shootMotor.set(1);
+// }
 
-public void shootStop() {
-  shootMotor.set(0);
-}
+// public void shootStop() {
+//   shootMotor.set(0);
+// }
 
 // public void winchUp() {
 //   winchMotor.set(1);

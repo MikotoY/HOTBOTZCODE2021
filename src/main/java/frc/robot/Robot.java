@@ -26,7 +26,7 @@ import frc.robot.subsystems.*;
 import frc.robot.commands.Vision.HoldDist;
 import frc.robot.commands.Vision.VisionLock;
 import frc.robot.commands.Vision.HoldDist;
-import frc.robot.commands.auto.AutoForward;
+// import frc.robot.commands.auto.AutoForward;
 // import frc.robot.commands.auto.PathTesting;
 // import frc.robot.profiling.PathFollower;
 // import frc.robot.profiling.PathTracking;
@@ -51,6 +51,7 @@ public class Robot extends TimedRobot {
     public static NetworkTableEntry yaw;
     public static double yawdub;
     public static Intake intake;
+    public static Shoot shoot;
     // SendableChooser<int> chooser;
 
     public Timer timer;
