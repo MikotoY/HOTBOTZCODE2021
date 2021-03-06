@@ -25,6 +25,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.*;
 import frc.robot.commands.Vision.HoldDist;
 import frc.robot.commands.Vision.VisionLock;
+import frc.robot.commands.shoot.SHOOT;
 import frc.robot.commands.Vision.HoldDist;
 // import frc.robot.commands.auto.AutoForward;
 // import frc.robot.commands.auto.PathTesting;
@@ -71,6 +72,7 @@ public class Robot extends TimedRobot {
         // follower = new PathFollower();
         // autoCommand = new PathTesting();
         intake = new Intake();
+        shoot = new Shoot();
         oi = new OI();     
         CameraServer.getInstance().startAutomaticCapture();
         

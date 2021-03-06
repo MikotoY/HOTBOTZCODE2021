@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.Trigger;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import frc.robot.commands.auto.*;
-import frc.robot.commands.intake.SHOOT;
+import frc.robot.commands.shoot.SHOOT;
 import frc.robot.commands.intake.intakeIN;
 import frc.robot.commands.intake.intakeOUT;
 import frc.robot.commands.intake.motorBW.*;
@@ -34,7 +34,7 @@ public class OI {
 
     
     public static Joystick joy1 = new Joystick(0);
-        // Trigger lowSpeed = new JoystickButton(joy1, RobotMap.Controller.LEFT_TRIGGER);
+        Trigger lowSpeed = new JoystickButton(joy1, RobotMap.Controller.LEFT_BUMPER);
         // Trigger highSpeed = new JoystickButton(joy1, RobotMap.Controller.RIGHT_TRIGGER);
         
         Button kSwerve = new JoystickButton(joy1, RobotMap.Controller.START);
@@ -77,7 +77,7 @@ public class OI {
 
 
     public OI() {
-        // lowSpeed.whenActive(new SwerveSetLowSpeed());
+        lowSpeed.whenActive(new SwerveSetLowSpeed());
         // highSpeed.whenActive(new SwerveSetHighSpeed());
         // lockSwerve.whenPressed(new SwerveLock());
 

@@ -5,15 +5,15 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-package frc.robot.commands.intake;
+package frc.robot.commands.shoot;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.OI;
-import frc.robot.Robot;
+import frc.robot.*;
 
 public class SHOOT extends Command {
   public SHOOT() {
-    requires(Robot.intake);
+    requires(Robot.shoot);
 
   }
 

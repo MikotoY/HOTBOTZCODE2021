@@ -39,10 +39,10 @@ public class RobotMap {
         // public final static double BL_ENC_OFFSET = 173;
         // public final static double BR_ENC_OFFSET = 72;
 
-        public final static double FL_ENC_OFFSET = 107;
-        public final static double FR_ENC_OFFSET = 105;
-        public final static double BL_ENC_OFFSET = 44;
-        public final static double BR_ENC_OFFSET = 46;
+        public final static double FL_ENC_OFFSET = 110;
+        public final static double FR_ENC_OFFSET = 103;
+        public final static double BL_ENC_OFFSET = 53;
+        public final static double BR_ENC_OFFSET = 50;
 
         // public final static double FL_ENC_OFFSET = 0;
         // public final static double FR_ENC_OFFSET = 0;
