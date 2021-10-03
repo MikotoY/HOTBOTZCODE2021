@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.Trigger;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import frc.robot.commands.auto.*;
+import frc.robot.commands.groups.IntakeAndShoot;
 import frc.robot.commands.shoot.SHOOT;
 import frc.robot.commands.intake.intakeIN;
 import frc.robot.commands.intake.intakeOUT;
@@ -67,8 +68,9 @@ public class OI {
         // Button liftUp = new JoystickButton(joy2, RobotMap.Logitech.high);
         // Button liftDown = new JoystickButton(joy2, RobotMap.Logitech.four);
 
-        Button shoot = new JoystickButton(joy2, RobotMap.Logitech.trigger);
-        Button intake = new JoystickButton(joy2, RobotMap.Logitech.five);
+        // Button shoot = new JoystickButton(joy2, RobotMap.Logitech.trigger);
+        // Button intake = new JoystickButton(joy2, RobotMap.Logitech.five);
+        Button intakeAndShoot = new JoystickButton(joy2, RobotMap.Logitech.trigger); /* Replacing buttons above for the command group */
         Button outtake = new JoystickButton(joy2, RobotMap.Logitech.three);
         Button winchUp = new JoystickButton(joy2, RobotMap.Logitech.four);
         
@@ -89,11 +91,14 @@ public class OI {
         // lowLift.whenActive(new lowliftsolenoid());
         // highLift.whenActive(new highliftsolenoid());
         // midposition.whenPressed(new LiftMid());
-        intake.whenPressed(new intakeIN());
+        // intake.whenPressed(new intakeIN()); Commented out for command group
         outtake.whenPressed(new intakeOUT());
 
         tilt.toggleWhenPressed(new tiltsolenoid());
-        shoot.whenPressed(new SHOOT());
+        // shoot.whenPressed(new SHOOT()); Commented out for command group
+
+        intakeAndShoot.whenPressed(new IntakeAndShoot());
+
         // winchUp.whenPressed(new liftUp());
         // liftDown.whenPressed(new liftDOWN());
 
